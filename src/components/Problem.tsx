@@ -37,7 +37,7 @@ const Problem = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="p-6 lg:p-8 rounded-3xl bg-white/[0.02] border border-white/5 flex flex-col items-center text-center gap-6 group hover:border-red-500/20 transition-all duration-500 hover:bg-red-500/[0.02]"
+              className="p-6 lg:p-8 rounded-3xl bg-white/2 border border-white/5 flex flex-col items-center text-center gap-6 group hover:border-red-500/20 transition-all duration-500 hover:bg-red-500/2"
             >
               <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-gray-500 group-hover:text-red-500 transition-colors group-hover:bg-red-500/10">
                 {point.icon}
@@ -47,7 +47,7 @@ const Problem = () => {
           ))}
         </div>
 
-        <div className="glass-card p-6 lg:p-16 relative overflow-hidden bg-gradient-to-b from-white/[0.03] to-transparent">
+        <div className="glass-card p-6 lg:p-16 relative overflow-hidden bg-linear-to-b from-white/3 to-transparent">
           <div className="absolute top-0 right-0 w-96 h-96 bg-brand-primary/5 blur-[120px] -z-10" />
           
           <h3 className="text-3xl font-bold text-center mb-16 text-white tracking-tight">The Operational Delta</h3>
@@ -108,7 +108,7 @@ const Problem = () => {
 
 const Step = ({ icon, text, active = false }: { icon: React.ReactNode, text: string, active?: boolean }) => (
   <div className={`p-5 rounded-2xl border flex items-center gap-4 text-base font-bold transition-all duration-500 ${
-    active ? 'bg-white/[0.05] border-white/20 text-white shadow-xl translate-x-2' : 'bg-white/[0.02] border-white/5 text-gray-500'
+    active ? 'bg-white/5 border-white/20 text-white shadow-xl translate-x-2' : 'bg-white/2 border-white/5 text-gray-500'
   }`}>
     <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${active ? 'bg-brand-primary/20' : 'bg-white/5'}`}>
       {icon}
@@ -119,7 +119,7 @@ const Step = ({ icon, text, active = false }: { icon: React.ReactNode, text: str
 
 const Connector = ({ active = false }: { active?: boolean }) => (
   <div className="flex justify-center lg:justify-start pl-7">
-    <div className={`w-0.5 h-8 ${active ? 'bg-gradient-to-b from-brand-primary to-brand-primary/30' : 'bg-white/5'}`}></div>
+    <div className={`w-0.5 h-8 ${active ? 'bg-linear-to-b from-brand-primary to-brand-primary/30' : 'bg-white/5'}`}></div>
   </div>
 );
 
