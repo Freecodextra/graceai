@@ -14,6 +14,17 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'AI Voice Agent', href: '#voice-agent' },
@@ -24,8 +35,9 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-background-dark/80 backdrop-blur-xl border-b border-white/5 py-4' : 'bg-transparent py-8'
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${
+        isMenuOpen || scrolled ? 'bg-[#050505] border-b border-white/5 py-4' : 
+        'bg-[#050505] md:bg-transparent py-4 md:py-8'
       }`}
     >
       <div className="section-container flex items-center justify-between">
@@ -70,9 +82,17 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="md:hidden fixed inset-0 z-40 bg-background-dark/98 backdrop-blur-2xl p-8 flex flex-col pt-32"
+            className="md:hidden fixed inset-0 z-[110] bg-[#050505] p-8 flex flex-col pt-32"
           >
-            <nav className="flex flex-col gap-8 text-center">
+            {/* Additional Close Button for Clarity */}
+            <button 
+              onClick={() => setIsMenuOpen(false)}
+              className="absolute top-8 right-8 text-white p-2 border border-white/10 rounded-full hover:bg-white/5 transition-colors"
+            >
+              <X size={24} />
+            </button>
+
+            <nav className="flex flex-col gap-8 text-center pt-8">
               {navLinks.map((link) => (
                 <a 
                   key={link.name} 

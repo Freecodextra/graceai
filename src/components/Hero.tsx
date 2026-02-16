@@ -3,7 +3,7 @@ import { Phone, Calendar, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[90vh] lg:min-h-screen flex items-center pt-12 lg:pt-32 overflow-hidden bg-glow">
+    <section id="home" className="relative min-h-[90vh] lg:min-h-screen flex items-center pt-24 lg:pt-32 overflow-hidden bg-glow">
       <div className="section-container relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-24 items-center">
           <motion.div 
