@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-12 mb-20">
           <div className="lg:col-span-2 space-y-8">
             <div className="flex items-center gap-4 group cursor-pointer">
-              <img src="/logo.png" alt="GraceAiGuru Logo" className="h-12 w-auto" />
+              <img src="/logo.png" alt="GraceAiGuru Logo" className="h-16 sm:h-20 w-auto" />
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-white tracking-tighter">GraceAiGuru</span>
                 <span className="text-[10px] text-gray-500 font-bold uppercase tracking-[0.4em] mt-1">Sovereign Intelligence</span>
@@ -42,11 +42,11 @@ const Footer = () => {
             <ul className="space-y-6">
               <ContactItem 
                 icon={<MapPin size={18} />} 
-                text={<>3343 Peachtree Rd NE, Suite 145<br />Atlanta, GA 30326</>} 
+                text={<>30 N Gould St Ste N<br />Sheridan, WY 82801</>} 
               />
               <ContactItem 
                 icon={<Phone size={18} />} 
-                text={<a href="tel:+14708660527" className="hover:text-white transition-colors">(470) 866-0527</a>} 
+                text={<a href="tel:+14694029932" className="hover:text-white transition-colors">469-402-9932</a>} 
               />
               <ContactItem 
                 icon={<Mail size={18} />} 

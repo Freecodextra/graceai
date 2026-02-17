@@ -42,7 +42,7 @@ const Header = () => {
     >
       <div className="section-container flex items-center justify-between">
         <div className="flex items-center gap-4 group cursor-pointer">
-          <img src="/logo.png" alt="GraceAiGuru Logo" className="h-10 sm:h-12 w-auto" />
+          <img src="/logo.png" alt="GraceAiGuru Logo" className="h-14 sm:h-20 w-auto" />
           <div className="flex flex-col">
             <span className="text-xl font-bold text-white tracking-tighter leading-none">GraceAiGuru</span>
             <span className="text-[10px] font-bold text-gray-500 uppercase tracking-[0.3em] mt-1 hidden sm:block">Elite Intelligence</span>
