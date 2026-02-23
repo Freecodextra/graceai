@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-12 mb-20">
           <div className="lg:col-span-2 space-y-8">
             <div className="flex items-center gap-4 group cursor-pointer">
-              <img src="/logo.png" alt="GraceAiGuru Logo" className="h-16 sm:h-20 w-auto" />
+              <img src="/logo.png" alt="GraceAiGuru Logo" className="h-20 sm:h-28 w-auto" />
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-white tracking-tighter">GraceAiGuru</span>
                 <span className="text-[10px] text-gray-500 font-bold uppercase tracking-[0.4em] mt-1">Sovereign Intelligence</span>
