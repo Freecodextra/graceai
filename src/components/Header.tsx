@@ -60,9 +60,14 @@ const Header = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-primary transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-          <button className="btn-primary !py-2.5 !px-6 text-xs uppercase tracking-widest">
+          <a 
+            href="https://assets.cdn.filesafe.space/s6ItVVYZgsP0g9yn6oQe/media/699e06f33db1c194453991bd.mov" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn-primary !py-2.5 !px-6 text-xs uppercase tracking-widest inline-flex items-center gap-2"
+          >
             Book Demo <ArrowRight size={14} />
-          </button>
+          </a>
         </nav>
 
         <button 
@@ -103,9 +108,15 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <button className="btn-primary w-full mt-8 py-5 text-xl">
+              <a 
+                href="https://assets.cdn.filesafe.space/s6ItVVYZgsP0g9yn6oQe/media/699e06f33db1c194453991bd.mov" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="btn-primary w-full mt-8 py-5 text-xl inline-flex items-center justify-center gap-3"
+              >
                 Book Demo <ArrowRight size={24} />
-              </button>
+              </a>
             </nav>
           </motion.div>
         )}

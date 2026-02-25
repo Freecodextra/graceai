@@ -65,9 +65,12 @@ const StartingPoint = () => {
               <ListItem text="High-margin scalability roadmap" />
             </ul>
 
-            <button className="btn-secondary w-full py-5 text-lg font-bold border-brand-secondary/20 hover:border-brand-secondary/40 text-brand-secondary">
+            <a 
+              href="tel:+14694029932" 
+              className="btn-secondary w-full py-5 text-lg font-bold border-brand-secondary/20 hover:border-brand-secondary/40 text-brand-secondary inline-flex items-center justify-center gap-3"
+            >
               Book Intelligence Audit <Phone size={20} />
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>

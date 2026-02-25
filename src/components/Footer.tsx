@@ -18,9 +18,14 @@ const Footer = () => {
               Engineering AI-enabled operating models that improve execution, secure revenue velocity, and eliminate operational friction for elite service businesses.
             </p>
             <div className="flex gap-4">
-              <button className="btn-primary py-3 px-6 text-sm">
+              <a 
+                href="https://app.graceaiguru.com/widget/booking/SgjnOsEL2ral1h1cebSr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-primary py-3 px-6 text-sm inline-flex items-center gap-2"
+              >
                 Book Demonstration <ArrowRight size={18} />
-              </button>
+              </a>
             </div>
           </div>
 

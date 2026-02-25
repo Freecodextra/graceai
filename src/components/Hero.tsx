@@ -39,15 +39,23 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5 pt-4">
-              <button className="btn-primary w-full sm:w-auto group text-lg py-4 px-8">
+              <a 
+                href="https://app.graceaiguru.com/widget/booking/SgjnOsEL2ral1h1cebSr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-primary w-full sm:w-auto group text-lg py-4 px-8 inline-flex items-center justify-center gap-3"
+              >
                 <Calendar size={22} />
                 Book Demonstration
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="btn-secondary w-full sm:w-auto text-lg py-4 px-8">
+              </a>
+              <a 
+                href="tel:+14694029932" 
+                className="btn-secondary w-full sm:w-auto text-lg py-4 px-8 inline-flex items-center justify-center gap-3"
+              >
                 <Phone size={22} />
                 AI Audit
-              </button>
+              </a>
             </div>
 
             <div className="pt-6">

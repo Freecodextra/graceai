@@ -53,9 +53,12 @@ const Consulting = () => {
                 <AuditTag icon={<Database size={16} />} text="Source of truth hygiene" />
                 <AuditTag icon={<Zap size={16} />} text="Execution gaps" />
               </div>
-              <button className="btn-primary w-full py-5 text-lg shadow-[0_0_30px_rgba(139,92,246,0.3)]">
-                Secure Your Intelligence Audit
-              </button>
+              <a 
+                href="tel:+14694029932" 
+                className="btn-primary w-full py-5 text-lg shadow-[0_0_30px_rgba(139,92,246,0.3)] inline-flex items-center justify-center"
+              >
+                Book Intelligent Audit
+              </a>
             </div>
           </motion.div>
 
